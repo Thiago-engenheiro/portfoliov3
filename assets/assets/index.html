@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="pt_br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -52,6 +52,9 @@
             </div>
           
             <header class="siteHeader" id="SiteHeader">
+
+                <div class="continerIntroducao">
+
                 <button class="button" data-text="Awesome">
                     <span aria-hidden="true" class="front-text">Thiago <mark>Abraao</mark></span>
                 </button>
@@ -95,9 +98,11 @@
 
                 </div>
 
+            </div>
+
                 
                 <nav class="siteHeader_nav" x-data>
-                    <ol>
+                    <ol class="navegacao">
                         <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
                             <div class="_dot">&#x25cf;</div>
                             <a class="_text" href="/">Bem vindo</a>
@@ -130,7 +135,88 @@
                     <section class="page" data-page="home">
                         <div class="page_content home">
 
+                            <section class="continerCardContato">
+
+                                <h4 class="ContatoTitulo">Contato</h4>
+
+                                <div class="continerInformacao">
+
+                                    <div class="continerInformacaoContato">
+
+                                        <img className="iconeRedeSocial" src="/imagens/icones/iconesContato/Phone Call.png" alt="Logo Thiago Abraao" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"/>
+
+                                    </div>
+
+                                    <div class="ContatoTextos">
+
+                                        <h5 class="tituloCardTextos">Whatsapp // telefone</h5>
+
+                                        <a class="cardTextosLink" href="https://wa.me/61993156654" target="_blank">
+                                            https://wa.me/61993156654
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="continerInformacao">
+
+                                    <div class="continerInformacaoContato">
+
+                                        <img className="iconeRedeSocial" src="/imagens/icones/iconesContato/Forward Email.png" alt="Logo Thiago Abraao" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"/>
+
+                                    </div>
+
+                                    <div class="ContatoTextos">
+                                        <h5 class="tituloCardTextos">Email</h5>
+                                        <a class="cardTextosLink" href="mailto:thiago.principal11@outlook.com.br" target="_blank">
+                                            thiago.principal11@outlook.com.br
+                                        </a>
+                                      </div>
+
+                                </div>
+
+                                <div class="continerInformacao">
+
+                                    <div class="continerInformacaoContato">
+
+                                        <img className="iconeRedeSocial" src="/imagens/icones/iconesContato/File.png" alt="Logo Thiago Abraao" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"/>
+
+                                    </div>
+
+                                    <div class="ContatoTextos">
+
+                                        <h5 class="tituloCardTextos">Curriculo PDF</h5>
+
+                                        <a class="cardTextosLink" href="https://www.canva.com/design/DAGXm9wo_r4/-yGSvUtqewqypJ5IWnCGpg/view?utm_content=DAGXm9wo_r4&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">linkCurriculo</a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="continerInformacao tamanho">
+
+                                    <div class="continerInformacaoContato">
+
+                                        <img className="iconeRedeSocial" src="/imagens/icones/iconesContato/Location Point.png" alt="Logo Thiago Abraao" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"/>
+
+                                    </div>
+
+                                    <div class="ContatoTextos">
+
+                                        <h5 class="tituloCardTextos">Localidade</h5>
+
+                                        <p class="cardTextosLink branco">Brasilia DF</p>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
                             <section class="continerCard">
+
+                                
 
                                 <div class="conteudoCard">
 
@@ -353,11 +439,11 @@
                                         Steam
 
                                     </div>
-
-                                        
-                                        
+    
                                     </div>
                                     </section>
+
+                                    
 
                                 </div>
 

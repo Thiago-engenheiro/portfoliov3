@@ -122,7 +122,7 @@ body.is-monospaced {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+   
     background-color: var(--c-bg);
     color: #fff;
     white-space: nowrap;
@@ -295,19 +295,18 @@ body.is-monospaced {
 }
 
 .content {
-    position: fixed;
+    position: relative;
     z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     mix-blend-mode: difference
 }
 
 .content_inner {
     position: relative;
-    min-height: 100%
+    height: 100%
 }
 
 .text-btn {
@@ -501,6 +500,7 @@ body.is-monospaced {
     white-space: nowrap
 }
 
+
 @media(min-width: 1280px) {
     .info {
         position:relative;
@@ -616,7 +616,6 @@ body.is-monospaced {
 .faq_a a {
     text-decoration: underline
 }
-
 
 
 .button {
@@ -968,8 +967,7 @@ ol{
     padding: 40px;
     border-radius: 16px;
     width: 700px;
-    margin: 2.5vh 0px 0px 0px;
-    height: 80vh;
+    height: 61vh;
 }
 
 .conteudoCard {
@@ -979,6 +977,83 @@ ol{
     scroll-behavior: smooth;
 
 }
+
+.continerCardContato {
+
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    gap: 20px;
+
+}
+
+.ContatoTitulo {
+
+    font-size: 40px;
+    font-family: var(--fonte02);
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+
+}
+
+.continerInformacao {
+
+    display: flex ;
+    align-items: center ;
+    gap: 20px ;
+     
+
+}
+
+.continerInformacaoContato {
+
+    background: #282829 ;
+    border-radius: 16px ;
+    padding: 15px ;
+    border-left: 2px solid silver;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.tituloCardTextos {
+
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+.cardTextosLink {
+
+    font-size: 14px;
+    color: #00B5DE;
+    cursor: pointer;
+
+}
+
+.branco {
+
+    color: white;
+    cursor: default;
+
+}
+
+.tamanho {
+
+    width: 298.45px;
+
+}
+
 
 .conteudoCard::-webkit-scrollbar {
     width: 8px; /* Largura da barra de rolagem */
@@ -1195,13 +1270,6 @@ ol{
 
 }
 
-.swiper-pagination {
-   
-  
-   
-  }
-
-
 @keyframes silver-animation {
     0% {
       background-position: 0% 50%;
@@ -1290,7 +1358,7 @@ ol{
 
 }
 
-  @media(max-width: 1700px) {
+  @media(max-width: 1900px) {
 
     .button {
         font-size:80px
@@ -1320,11 +1388,17 @@ ol{
         font-size: 36px;
 
     }
+
+    ._text {
+
+        font-size: 40px;
+
+    }
     
 
 }
 
-    @media(max-width: 1200px) {
+    @media(max-width: 1550px) {
 
         .button {
 
@@ -1363,36 +1437,150 @@ ol{
 
         }
 
+        ._text {
+
+            font-size: 30px;
+    
+        }
+
 }
 
-@media(max-width: 560px) {
+@media(max-width: 1400px) {
+
+    .continerIntroducao {
+
+        display: block;
+        position: relative;
+        
+    }
+
+    .page {
+
+        margin: 0px !important;
+        height: 5000px !important;
+        height: auto !important;
+        overflow-y: visible !important;
+        scroll-behavior: auto !important; 
+
+    }
+
+    .page_content {
+
+        margin: 0px !important;
+        height: auto !important;
+       
+    }
+
+
+    .textos, .textoAnimado {
+        margin-top: 10px;
+    }
+  
+
+  
+    .siteHeader_nav {
+
+        position: fixed;
+        left: calc(var(--pad) + 0px);
+        bottom: calc(var(--pad) + 0px);
+        width: calc(100% - 8vmin);
+        
+      
+      
+        
+    }
+
+    .navegacao {
+
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        background: white;
+        color: black;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    ._text {
+
+        font-size: 2.5vw;
+
+    }
+
+    .continerCard {
+
+        height: auto !important;
+        
+    }
+
+    .continerCardContato {
+
+        margin: 400px 0px 20px 0px;
+        height: auto !important;
+        gap: 20px;
+    
+    }
+    
+    .conteudoCard {
+    
+        height: auto;
+        overflow-y: visible;
+        scroll-behavior: auto; 
+        margin: 0px 0px 150px 0px;
+    }
+
+    .home {
+
+        position: relative;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: normal;
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    #Page {
+        overflow: auto; 
+    }
+
+    body {
+        overscroll-behavior: auto; 
+    }
+
+    html, body {
+        height: auto; 
+    }
 
     .button {
-        font-size:40px
+        font-size:80px
     }
 
     .Subtitulo {
 
-        font-size: 16px;
+        font-size: 30px;
         height: 45px;
     }
 
     .loader {
 
-        font-size: 16px;
+        font-size: 30px;
         height: 50px;
 
     }
 
     .Subtitulo01 {
 
-        font-size: 22px;
+        font-size: 42px;
 
     }
 
     .Subtitulo02 {
 
-        font-size: 18px;
+        font-size: 28px;
 
     }
     
@@ -1401,8 +1589,6 @@ ol{
         margin: 7px 0px 0px 0px;
 
     }
-   
-
 
 }
 
